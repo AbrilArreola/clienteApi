@@ -47,7 +47,10 @@ Si no se envía o es incorrecta, se responde con `401 Unauthorized`.
 2. Verificar la configuracion de conexión a MySQL en `Program.cs`
 3. Crear base de datos `clientesdb`
 4. Ejecutar migraciones:
+```bash
    dotnet ef migrations add InitialCreate
    dotnet ef database update
+```
 5.Correr el proyecto
+```bash
    dotnet run
